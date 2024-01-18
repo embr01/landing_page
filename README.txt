@@ -1,0 +1,1 @@
+lamdingPageb.html este fisierul de index al proiectului Landing Page

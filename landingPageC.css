@@ -1,0 +1,461 @@
+:root{
+    --cblack: #22343D;
+    --cgreen: #02897A;
+    --cblue:#4D8DFF;
+    --cpurple: #740A76;
+    --cwhite: #FFF;
+    --cred: #F03E3D;
+}
+
+
+*{
+    /*border: 1px solid black;*/
+    box-sizing: border-box;
+    
+}
+
+body{
+    margin-left: 146px;
+    margin-right: 146px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 0;
+        /* border: 11px solid gold;*/
+   /* width: 100%;*/
+   color: var(--cblack);
+   background-color: var(--cwhite);
+}
+
+/*navigation bar*/
+nav{
+        display: flex;
+            /* border: 1px solid red;*/
+        height: 80px; 
+        position: fixed;
+        z-index: 1;
+        /*margin-right:146px;*/
+        margin: 0;
+       /*width: 100%;*/
+       background-color: var(--cwhite);
+    }
+
+    .nav1{
+            display:flex;
+            margin-top:19px;
+            margin-bottom:25px;
+        }
+
+    .nav1 img{
+            width:40px;
+            height: 37px;
+    }   
+
+    .nav1 a{
+            font-size:30px;
+            font-weight: 700;
+            color: var(--cblack);
+            margin-top: 0;
+            margin-left: 16px;
+            text-decoration: none;
+            
+    }
+    
+    nav a{text-decoration: none;  }
+
+    .navigation{
+            display: flex;
+            /*margin-left: auto; /* pentru a muta textul in partea dreapta; merge fara position fixed la element parinte*/
+               /* border: 1px solid black;*/
+            margin-left: 237px;
+            margin-bottom: 25px;
+            margin-top: 27px;
+            padding:0;
+            
+    }
+
+    nav button{
+       width:102px;
+       height: 43px;
+       margin-top: 19px; 
+       border-radius: 4px;
+    }
+
+    nav .btn1
+    {
+            border: 1px solid var(--cblue);
+            background-color: var(--cwhite);
+    }
+
+    nav .btn2{
+            background-color: var(--cgreen);
+            color: var(--cwhite);
+            border: 1px solid var(--cgreen);
+    }
+
+    .nav2{
+        display: flex;
+        visibility: hidden; /*navbar hidden pentru telefon*/
+        
+    }
+
+    .nav2 img{
+        width: 24px;
+        height: 24px;
+        margin-top: 28px;
+    }
+
+    .nav3 /*meniul din dreapta*/
+    {
+        position: relative;
+        left:100px;
+        visibility: visible;
+        margin-top: 19px;
+       
+    }
+
+    .nav3 span{  /*meniul din dreapta*/
+        display: block;
+        border-bottom: 5px solid var(--cblack);
+        margin-top:5px;
+        width:28px;
+    }
+
+/*sectiunea 1*/
+    .section1{
+        position:relative;  
+        top: 100px;         
+        display: flex;
+        flex-direction: column; /* pentru mobil*/
+
+    }
+
+    .section1 .right .lap{
+        display: flex;
+        width: 541px;
+        height: 426px;
+        flex-shrink: 1;  /*nu functioneaza*/
+    }
+
+    .section1 .right .mob{
+        position:relative;
+        top: -326px;
+    }
+
+    .section1 .lap{
+        visibility: hidden;
+    }
+
+    .section1 .mob{
+        visibility: visible;
+    }
+
+    .section1 input{
+        width: 346px;/*pentru telefon*/
+        height: 66px;
+        border-radius: 100px;
+        padding-left: 50px;
+        border-color: #ddd;
+    }
+   
+    .section1 button{
+        width: 120px;
+        height: 50px;
+        background-color: var(--cgreen);
+        border-color: var(--cgreen);
+        border-radius: 100px;
+        color: var(--cwhite);
+        position: relative;
+        left: 216px;  /*pentru mobil*/
+        top: -57px;
+    }
+
+    .section1 .ml1{ /* move to left */
+        position: relative;
+        left: -32px;
+    }
+
+    .section1 .ml2{ /* move to left */
+        position: relative;
+        left: -62px;
+    }
+
+    .section1 .ml3{ /* move to left */
+        position: relative;
+        left: -62px;
+        top: -25px;
+    }
+
+    .section1 span{
+        color: var(--cgreen);
+    }
+
+    .section2 h1{
+        text-align: center;
+    }
+
+/*sectiunea 2*/    
+
+    .section2 {
+        position: relative;
+        top: -100px;
+    }
+
+    .section2 .linie{
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+/*sectiunea 3*/
+    .section3 h1{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .section3 .row{
+        display: flex;
+        flex-direction: column; /*pentru mobil*/
+    }
+
+    .section3 .linie{
+        display: flex;
+    }
+
+    .section3 .left{
+        width:50%;
+    }
+
+    .section3 .right{
+        width:50%;
+    }
+
+    .section3 .imag{
+        width: 90%;
+    }
+
+    .section3 .right img{
+        width: 54px;
+        height: 50px;
+        position: relative;
+        top: 15px;
+        margin-right: 20px;
+    }
+
+/*sectiunea 4*/
+    .section4 .how{
+        text-align: center;
+        margin: 100px 0;
+        text-transform: uppercase;
+    }
+
+    .section4 .linie{
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: column; /*pentru mobil -la @media e pt laptop*/
+    }
+
+    .section4 .lin2{
+        flex-direction: column-reverse; /*pt mobil*/
+    }
+
+/*sectiunea 5*/
+    .section5 {
+        text-align: center;
+    }
+
+    .section5 form
+    {
+        border: 1px solid #e8e8e8;
+        border-radius: 20px;
+        /*padding: 50px; /*mobil*/
+       /* flex-shrink: 1;
+        align-self: stretch;*/
+        width: 100%; 
+    }
+
+    .section5 .chenar{
+        border-radius: 20px;
+        border: 1px solid #e8e8e8;
+        width: 344px;/*mobil*/
+        height: 16px;
+        padding: 20px;
+        
+    }
+
+    .section5 .chenar2{
+        border-radius: 20px;
+        border: 1px solid #e8e8e8;
+        width: 344px;/*mobil*/
+        height: 147px;
+        padding: 23px 20px;
+        overflow: stretch;
+    }
+
+    .section5 .button{
+        border: 1px solid var(--cgreen);
+        background-color: var(--cgreen);
+        color: var(--cwhite);
+        border-radius: 20px;
+        padding: 18px 38px;
+        width: 145px;
+        height: 52px;
+        display:flex;
+        align-self: flex-start;
+        
+      
+
+    }
+
+ /*footer*/   
+    footer{
+        padding-left: 10px;
+        margin-top: 100px;
+    }
+
+    footer .center{
+        text-align: center;
+    }
+
+    footer .linie{
+        text-align: center;
+        display: flex;
+        flex-direction: column; /*pentru telefon*/
+    }
+
+    footer .diva img{
+        height:  30px;
+    }
+
+    footer .diva span{
+        font-size:25px;
+        font-weight: 700;
+        color: var(--cblack);
+        margin-top: 0;
+        margin-left: 10px;
+    }
+
+    footer .divb{
+        display: flex;
+        justify-content: space-between; /*nu vrea*/
+    }
+
+    footer .divb img{
+        background-image: url(landingPage_image/fot4.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        
+    }    
+
+   footer ul li{
+        font-weight: normal;
+        list-style: none;
+   }
+
+   footer  input{
+        width: 325px;
+        height: 48px;
+        border: 1px solid var(--cblue);
+   }
+
+   footer button{
+        border-radius: 4px;
+        background-color: var(--cgreen);
+        border: 1px solid var(--cgreen);
+        color: var(--cwhite);
+        width: 131px;
+        height: 39px;
+   }
+
+
+.bold{
+        font-weight: bold;
+    }
+
+.green{
+        color: var(--cgreen);
+    }    
+
+.white{
+        color: var(--cwhite);
+}
+
+.big{
+        font-size: 76px;
+        font-weight: 700;
+}
+
+.grey{
+    color: #ccc;
+}
+
+.marginright{
+    margin-right: 25px;
+    color: var(--cblack);
+}
+
+
+    @media (min-width:700px) {
+        .nav2{
+            visibility: visible; /*navbar hidden pentru telefon*/
+        }
+        .nav3{
+            visibility: hidden; /*nav3 hidden pentru latop*/
+        }
+
+/*section 1*/
+       .section1
+       {
+            flex-direction: row;
+       }
+
+        .section1 .lap{
+            visibility: visible; /* visible pentru latop*/
+        }
+
+        .section1 .mob{
+            visibility: hidden; /* hidden pentru latop*/
+        }
+
+        .section1 input{
+            width: 470px; /*pentru laptop*/
+        }
+
+        .section1 button{
+            left: 340px;
+        }
+
+ /*sectiunea 3*/
+        .section3 .row{
+            flex-direction: row; /*pentru laptop*/
+        }      
+        
+
+   /*sectiunea 4*/     
+        .section4 .linie{
+            flex-direction: row; /*pt laptop*/
+        }
+
+  /*sectiunea 5*/
+  .section5 .chenar{
+        width: 728px;
+   }      
+
+.section5 .chenar2{
+        width: 728px;
+   
+}      
+
+.section5 form
+    {
+       
+        padding: 50px; /*lap*/
+    }
+
+
+/*footer*/
+        footer .linie{
+            text-align: left;
+            flex-direction: row; /*pentru laptop*/
+            justify-content: space-between;
+        }
+}
